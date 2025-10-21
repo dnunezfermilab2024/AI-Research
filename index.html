@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RC AI Voice Chat</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; padding: 20px; background-color: #f4f4f9; }
+        .container { max-width: 600px; width: 100%; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1 { color: #333; }
+        button { padding: 12px 24px; font-size: 16px; cursor: pointer; border: none; border-radius: 5px; background-color: #007bff; color: white; margin-top: 20px; }
+        button:hover { background-color: #0056b3; }
+        .chat-output { border: 1px solid #ccc; padding: 15px; margin-top: 20px; min-height: 200px; max-height: 400px; overflow-y: auto; border-radius: 5px; background: #fafafa; white-space: pre-wrap; }
+        .message-user { color: #007bff; font-weight: bold; }
+        .message-assistant { color: #333; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RC AI Voice Chat</h1>
+        <button id="voiceBtn">Start Speaking</button>
+        <div class="chat-output" id="chatOutput"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
